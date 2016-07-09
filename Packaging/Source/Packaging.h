@@ -10,10 +10,10 @@
 
 @interface Packaging : NSObject
 
-@property (nonatomic, assign) NSInteger sizeOfPackage;
+@property (nonatomic, assign) NSUInteger sizeOfPackage;
 
 //Inits
-- (instancetype)initWithSizeOfPackages:(NSInteger)size;
+- (instancetype)initWithSizeOfPackages:(NSUInteger)size;
 
 //Adders
 - (void)addElement:(id)element;

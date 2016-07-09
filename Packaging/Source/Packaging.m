@@ -19,7 +19,7 @@
     return [self initWithSizeOfPackages:1];
 }
 
-- (instancetype)initWithSizeOfPackages:(NSInteger)size {
+- (instancetype)initWithSizeOfPackages:(NSUInteger)size {
     if (self = [super init]) {
         _sizeOfPackage = size;
         _queue = [NSMutableArray new];
@@ -86,7 +86,7 @@
 }
 
 - (BOOL)lessThanSizeOfPackage {
-    return _lastIndexOfPackage - self.sizeOfPackage < 0;
+    return _lastIndexOfPackage < self.sizeOfPackage;
 }
 
 @end
