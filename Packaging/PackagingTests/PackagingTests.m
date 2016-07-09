@@ -91,6 +91,23 @@
     NSArray *expect = @[];
     XCTAssertEqualObjects(arr, expect);
 }
+
+- (void)testGetAllPackagesAndAddMoreElements {
+    NSArray *arr = [self.queue getPackage];
+    arr = [self.queue getPackage];
+    arr = [self.queue getPackage];
+    arr = [self.queue getPackage];
+    arr = [self.queue getPackage];
+    arr = [self.queue getPackage];
+    arr = [self.queue getPackage];
+    
+    [self.queue addElements:@[[NSNumber numberWithInt:0], [NSNumber numberWithInt:1]]];
+    
+    arr = [self.queue getPackage];
+    NSArray *twoElem = @[[NSNumber numberWithInt:0], [NSNumber numberWithInt:1]];
+    XCTAssertEqualObjects(arr, twoElem);
+}
+
 - (void)testChangingSizeOfPackage {
     NSArray *arr = [self.queue getPackage];
     arr = [self.queue getPackage];

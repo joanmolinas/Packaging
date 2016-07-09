@@ -89,18 +89,4 @@
     return _lastIndexOfPackage - self.sizeOfPackage < 0;
 }
 
-#pragma mark - Properties
-
-//- (void)setSizeOfPackage:(NSInteger)sizeOfPackage {
-//    if (sizeOfPackage == _sizeOfPackage) return;
-//    if (_lastIndexOfPackage == _queue.count) return;
-//    
-//    if (sizeOfPackage < _sizeOfPackage) {
-//        _lastIndexOfPackage += sizeOfPackage;
-//    } else {
-//        _lastIndexOfPackage -= sizeOfPackage;
-//    }
-//    _sizeOfPackage = sizeOfPackage;
-//    
-//}
 @end
