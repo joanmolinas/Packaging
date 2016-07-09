@@ -1,0 +1,33 @@
+//
+//  Packaging.h
+//  Packaging
+//
+//  Created by Joan Molinas Ramon on 9/7/16.
+//  Copyright © 2016 Joan Molinas. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface Packaging : NSObject
+
+@property (nonatomic, assign) NSInteger sizeOfPackage;
+
+//Inits
+- (instancetype)initWithSizeOfPackages:(NSInteger)size;
+
+//Adders
+- (void)addElement:(id)element;
+- (void)addElements:(NSArray *)elements;
+
+//Removers
+- (void)removeLastElement;
+
+//Getters
+- (NSArray *)all;
+- (NSArray *)getPackage;
+- (NSInteger)size;
+
+//Consultors
+- (BOOL)lessThanSizeOfPackage;
+- (BOOL)isEmpty;
+@end
