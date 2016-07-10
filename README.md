@@ -8,7 +8,7 @@ Packaging provide a simple way to get messages (for example) as a packages. You 
 
 It's really simple, packaging get you *x* messages starting from last messages.
 
-## Example
+## Example (Run tests)
 
 ### Getting messages from the server order from oldest to newest
 ```Objective-C
