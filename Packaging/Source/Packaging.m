@@ -46,6 +46,7 @@
 
 - (void)removeLastElement {
     [_queue removeLastObject];
+    _lastIndexOfPackage -= 1;
 }
 
 #pragma mark - Getters

@@ -24,6 +24,12 @@
     }
 }
 
+- (void)testInit {
+    self.queue = [Packaging new];
+    XCTAssertNotNil(self.queue);
+    XCTAssertEqual(1, self.queue.sizeOfPackage);
+}
+
 - (void)testCount {
     XCTAssertEqual([self.queue size], 22);
 }
@@ -122,5 +128,19 @@
     NSArray *expect = @[[NSNumber numberWithInt:2], [NSNumber numberWithInt:3], [NSNumber numberWithInt:4], [NSNumber numberWithInt:5], [NSNumber numberWithInt:6], [NSNumber numberWithInt:7]];
     XCTAssertEqualObjects(arr, expect);
 }
+
+- (void)testRemoveLastElement {
+    [self.queue removeLastElement];
+    NSArray *arr = [self.queue getPackage];
+    NSArray *expect = @[[NSNumber numberWithInt:15],[NSNumber numberWithInt:16], [NSNumber numberWithInt:17], [NSNumber numberWithInt:18], [NSNumber numberWithInt:19], [NSNumber numberWithInt:20]];
+    XCTAssertEqualObjects(arr, expect);
+    
+}
+
+- (void)testIsEmpty {
+    self.queue = [Packaging new];
+    XCTAssertTrue([self.queue isEmpty]);
+}
+
 
 @end
