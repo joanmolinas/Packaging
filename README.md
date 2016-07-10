@@ -86,7 +86,7 @@ Drag and drop or copy Source Folder into your project.
 1. Fork it!
 2. Create your feature branch: `git checkout -b Pack-new-feature`
 3. Commit your changes: `git commit -am 'Add new feature'`
-4. Push to the branch: `git push origin my-new-feature`
+4. Push to the branch: `git push origin Pack-new-feature`
 5. Submit a pull request 👌
 
 ## Credits
