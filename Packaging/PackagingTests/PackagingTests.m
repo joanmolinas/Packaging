@@ -141,6 +141,4 @@
     self.queue = [Packaging new];
     XCTAssertTrue([self.queue isEmpty]);
 }
-
-
 @end

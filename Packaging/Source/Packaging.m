@@ -83,7 +83,7 @@
 #pragma mark - Consultors
 
 - (BOOL)isEmpty {
-    return _queue.count == 0;
+    return [self size] == 0;
 }
 
 - (BOOL)lessThanSizeOfPackage {
